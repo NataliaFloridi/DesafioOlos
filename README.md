@@ -17,7 +17,7 @@ Desafio Olos - API Nasa - 7 days.
 
 ### Screenshot
 
-
+![Screenshot Desafio Olos](https://github.com/NataliaFloridi/DesafioOlos/blob/main/img/screenshot.jpg)
 
 ### Links
 
