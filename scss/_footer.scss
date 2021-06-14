@@ -1,0 +1,15 @@
+footer{
+    @include style-1 (13);
+
+    p, a {
+        color: $main-color-3;
+        justify-content: center;
+        margin-top: 50px;
+        text-align: center; 
+        text-decoration: none;
+        &:hover a{
+            color: $main-color-2;
+            transition: .3s ease-in-out;
+        }
+    }
+}

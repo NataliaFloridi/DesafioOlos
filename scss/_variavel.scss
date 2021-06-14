@@ -1,0 +1,48 @@
+$font-1:'Play', sans-serif;
+$main-color-1:rgb(17,24,36); 
+$main-color-2:  #ea212a;
+$main-color-3: #fff;
+
+
+@function em($pixel, $contexto: 16) {
+  @return $pixel / $contexto + em;
+}
+
+@mixin style-1($size) {
+  font-family: $font-1;
+  
+  @if $size == 13 {
+    font-size: em(13);
+  }
+  @else if $size == 16 {
+    font-size: em(16);
+  }
+  @else if $size == 24 {
+    font-size: em(20, 24);
+  }
+}
+
+$sm-device: 375px;
+$md-device: 760px;
+$lg-device: 1440px;
+
+@mixin device ($size) {
+
+    @if $size == lg {
+        @media screen and (min-width: #{$lg-device}) {
+            @content;
+        }
+    }
+
+    @else if $size == md {
+        @media screen and (min-width: #{$md-device}) and (max-width: $lg-device - 1) {
+            @content;
+    }
+
+    }
+    @else if $size == sm {
+        @media screen and (max-width: $md-device - 1) {
+            @content;
+        }
+    }
+}

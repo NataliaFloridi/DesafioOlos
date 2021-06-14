@@ -1,0 +1,131 @@
+body {
+  background-color: #111824;
+}
+
+body h2, body h3, body a, body p, body q address {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  margin: 10px auto;
+  max-width: 150px;
+  opacity: 50%;
+}
+
+.menu.container-fluid {
+  justify-content: flex-end;
+}
+
+.menu .navbar-collapse {
+  justify-content: flex-end;
+  margin-right: 80px;
+}
+
+.menu .navbar-collapse li {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 0 15px;
+}
+
+.menu .navbar-collapse li:hover {
+  background-color: #ea212a;
+  transition: .3s ease-in-out;
+}
+
+.menu .navbar-collapse li a {
+  color: #fff;
+  font-family: "Play", sans-serif;
+  text-decoration: none;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Play", sans-serif;
+  font-size: 2.62em;
+  text-align: center;
+  text-shadow: 5px 5px 50px;
+}
+
+.main {
+  background-color: #fff;
+  border-radius: 10px;
+  font-family: "Play", sans-serif;
+  height: 100%;
+  margin: 50px auto;
+  opacity: 80%;
+}
+
+.main .input-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.main .input-field label {
+  align-self: center;
+}
+
+.main .input-field input {
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 2px 10px 10px;
+  width: 200px;
+}
+
+@media screen and (max-width: 759px) {
+  .main .input-field input {
+    width: 140px;
+  }
+}
+
+.main .input-field button {
+  align-self: center;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.main .input-field button:hover {
+  background-color: #ea212a;
+  transition: .3s ease-in-out;
+}
+
+.main .content {
+  font-family: "Play", sans-serif;
+  font-size: 1em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main .content td:first-of-type {
+  text-align: left;
+}
+
+footer {
+  font-family: "Play", sans-serif;
+  font-size: 0.8125em;
+}
+
+footer p, footer a {
+  color: #fff;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer p:hover a, footer a:hover a {
+  color: #ea212a;
+  transition: .3s ease-in-out;
+}

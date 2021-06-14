@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <title>Desafio Olos - Nasa</title>
+</head>
+
+<body>
+    
+    <header class="row">
+
+        <div class="col-3">
+
+            <img src="img/logo.png" alt="nasa"/>
+
+        </div>
+
+       
+        <nav class=" col-9 navbar navbar-expand-lg navbar-dark ">
+
+            <div class="container-fluid menu">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="#">informações</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="#">Fale Conosco</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="#">Sobre</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="col-12">
+
+            <h1>Desafio Olos - Nasa</h1>
+
+        </div>
+
+    </header>
+  
+    <main class="col-10 main">
+
+        <div class="row">
+            
+            <form class="input-field col-6">
+
+                <label for="search">Nome do Asteróide:</label>
+
+                <input type="text" id="search" class="name" placeholder="Digite o nome aqui..."/>
+
+                <button type="submit">Buscar</button>
+
+            </form>
+
+            <form class="input-field col-6">
+
+                <label for="start">Data de aproximação:</label>
+
+                <input type="date" id="start" class="date"/>
+
+            </form>
+         
+        </div>
+             
+        <div class="row">
+
+            <div class="col-11 content">
+
+                <table id="list" class="table table-dark table-striped">
+
+                    <thead >
+
+                        <tr> 
+
+                            <th scope="col">Nome</th>
+                            <th scope="col">Diâmetro Min. (km)</th>
+                            <th scope="col">Diâmetro Max. (km)</th>
+                            <th scope="col">Distância da terra (km)</th>
+                            <th scope="col">Perigoso</th>
+                            <th scope="col">Data</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="col-12" id="info"></tbody>
+
+                </table>
+
+            </div>
+                                  
+        </div>
+ 
+    </main>
+
+    <footer>
+
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/natalia-floridi/">Natália Floridi</a></p>
+
+    </footer>
+
+</body>
+
+</html>
