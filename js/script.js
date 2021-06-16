@@ -51,47 +51,35 @@ function handleError(error){
 
 window.addEventListener("DOMContentLoaded", contentLoaded)
 
-// /* Busca por nome*/
+/* Busca por nome*/
 
-function searchTable() {
-    var input, filter, found, table, tr, td, i, j;
-    input = document.getElementById("search");
-    filter = input.value.toLowerCase();
-    table = document.getElementById("list");
-    tr = table.getElementsByTagName("tr");
-    for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td");
-        for (j = 0; j < td.length; j++) {
-            if (td[j].innerHTML.toLowerCase().indexOf(filter) > -1) {
-                found = true;
+var tbody= document.getElementById("info");
+var tr = tbody.childNodes;
+
+document.getElementById("search").addEventListener("keyup", function() {
+
+    var search = document.getElementById("search").value.toLowerCase();
+    
+    for (var i = 0; i < tbody.childNodes.lenght; i++) {
+        var find = false;
+        var tr = tbody.childNodes[i];
+
+        console.log(tr);
+
+        var td = tr.childNodes;
+        
+        for (var j = 0; j < td.lenght; j++) {
+            var value = td[j].childNodes[0].nodeValue.toLoweCase();
+            console.log(value);
+            if (value.indexOf(search) >= 0) {
+                find = true;
             }
         }
-        if (found) {
-            tr[i].style.display = "";
-            found = false;
+        if (achou) {
+            tr.style.display = "table-row"
         } else {
-            tr[i].style.display = "none";
+            tr.style.display = "none"
         }
     }
-
-}
-
-// document.getElementById("search").addEventListener("keyup", function(){
-//     var asteroidSearch = document.getElementById("search").value.toLoweCase();
-
-//     for (var i = 0; i<tbody.childNodes.leght; i++) {
-//         var find = false;
-//         var tr = tbody.childNodes[i];
-//         var td = tr.childNodes;
-//         for (var j = 0; j< td.lenght; j++) {
-//             var value = td[j].childNodes[0].nodeValue.toLoweCase();
-//             if (value.indexOf(asteroidSearch) >= 0) {
-//                 find = true;
-//             }
-//         }
-//     }   if (find) {
-//         tr.style.display = "table-row";
-//         } else {
-//             tr.style.display = "none";
-//         }
-// });
+});
+        
