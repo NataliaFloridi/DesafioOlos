@@ -1,15 +1,46 @@
-footer{
-    @include style-1 (13);
+.footer{
+    margin-top: 200px;
 
-    p, a {
+    .information {
         color: $main-color-3;
-        justify-content: center;
+        text-align: center;
+
+        h2{
+            @include style-1(18);
+            align-self: center;
+            border: 1px solid $main-color-3;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 30px auto;
+            max-width: 250px;
+    
+        }
+
+        p, a {
+            color: $main-color-3;
+            margin-top: 5px;
+            text-decoration: none;
+            &:hover a {
+                color: $main-color-2;
+                transition: .3s ease-in-out;
+            }
+        }
+    }
+
+    .address{
+        @include style-1 (13);
+        color: $main-color-3;
         margin-top: 50px;
         text-align: center; 
         text-decoration: none;
-        &:hover a{
-            color: $main-color-2;
-            transition: .3s ease-in-out;
+
+        a{ 
+            text-decoration: none;
+            color: $main-color-3;
+            &:hover {
+                color: $main-color-2;
+                transition: .3s ease-in-out;
+            }
         }
     }
 }

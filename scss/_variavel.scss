@@ -17,6 +17,9 @@ $main-color-3: #fff;
   @else if $size == 16 {
     font-size: em(16);
   }
+  @else if $size == 18 {
+    font-size: em(18);
+  }
   @else if $size == 24 {
     font-size: em(20, 24);
   }

@@ -48,10 +48,9 @@ function handleError(error){
     console.warn(error.message);
 }
 
-
 window.addEventListener("DOMContentLoaded", contentLoaded)
 
-/* Busca por nome*/
+/* Busca por nome dentro da tabela exibida*/
 
 var tbody= document.getElementById("info");
 var tr = tbody.childNodes;
@@ -63,23 +62,20 @@ document.getElementById("search").addEventListener("keyup", function() {
     for (var i = 0; i < tbody.childNodes.lenght; i++) {
         var find = false;
         var tr = tbody.childNodes[i];
-
-        console.log(tr);
-
         var td = tr.childNodes;
         
         for (var j = 0; j < td.lenght; j++) {
             var value = td[j].childNodes[0].nodeValue.toLoweCase();
-            console.log(value);
+
             if (value.indexOf(search) >= 0) {
                 find = true;
             }
         }
-        if (achou) {
+        
+        if (find) {
             tr.style.display = "table-row"
         } else {
             tr.style.display = "none"
         }
     }
 });
-        

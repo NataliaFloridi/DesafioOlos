@@ -2,7 +2,7 @@ body {
   background-color: #111824;
 }
 
-body h2, body h3, body a, body p, body q address {
+body h1, body h2, body a, body p, body q address {
   margin: 0;
   padding: 0;
 }
@@ -112,20 +112,52 @@ h1 {
   text-align: left;
 }
 
-footer {
-  font-family: "Play", sans-serif;
-  font-size: 0.8125em;
+.footer {
+  margin-top: 200px;
 }
 
-footer p, footer a {
+.footer .information {
   color: #fff;
-  justify-content: center;
+  text-align: center;
+}
+
+.footer .information h2 {
+  font-family: "Play", sans-serif;
+  font-size: 1.125em;
+  align-self: center;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 30px auto;
+  max-width: 250px;
+}
+
+.footer .information p, .footer .information a {
+  color: #fff;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.footer .information p:hover a, .footer .information a:hover a {
+  color: #ea212a;
+  transition: .3s ease-in-out;
+}
+
+.footer .address {
+  font-family: "Play", sans-serif;
+  font-size: 0.8125em;
+  color: #fff;
   margin-top: 50px;
   text-align: center;
   text-decoration: none;
 }
 
-footer p:hover a, footer a:hover a {
+.footer .address a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .address a:hover {
   color: #ea212a;
   transition: .3s ease-in-out;
 }
